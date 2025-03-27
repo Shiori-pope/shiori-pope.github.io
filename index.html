@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiori Pope - Personal Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .header-content {
+            text-align: center;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: #34495e;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            margin: 0 10px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid #3498db;
+            color: #3498db;
+        }
+        .btn-secondary:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .social-links {
+            margin-top: 2rem;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #34495e;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #3498db;
+            transform: translateY(-3px);
+        }
+        section {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 0 20px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .about-image, .about-text {
+                flex: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Shiori Pope</h1>
+                <p class="subtitle">Developer | Creator | Innovator</p>
+                <div class="cta-buttons">
+                    <a href="#about" class="btn">About Me</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400" alt="Shiori Pope">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Shiori Pope, a passionate developer and creative thinker. I love building things that live on the internet and solving complex problems with elegant solutions.</p>
+                    <p>With a background in computer science and a keen eye for design, I strive to create digital experiences that are both functional and beautiful.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, reading, or enjoying the outdoors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #ecf0f1;">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div style="text-align: center;">
+                <p>Interested in working together or just want to say hi?</p>
+                <p>Feel free to reach out to me at <a href="mailto:contact@shioripope.com" style="color: #3498db; text-decoration: none;">contact@shioripope.com</a></p>
+                <a href="#" class="btn" style="margin-top: 30px;">Send Message</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Shiori Pope. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
